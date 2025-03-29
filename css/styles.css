@@ -1,0 +1,89 @@
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Color Variables */
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --white: #ffffff;
+    --gray-light: #f3f4f6;
+    --gray-dark: #6b7280;
+    --black: #111827;
+}
+
+/* Utility Classes */
+.bg-primary {
+    background-color: var(--primary);
+}
+.text-primary {
+    color: var(--primary);
+}
+.hover\:bg-primary-dark:hover {
+    background-color: var(--primary-dark);
+}
+
+/* Navigation */
+.nav-link {
+    transition: all 0.3s ease;
+}
+.nav-link:hover {
+    color: var(--primary);
+}
+
+/* Product Cards */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.btn {
+    transition: all 0.3s ease;
+}
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+}
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+}
+
+/* Responsive Images */
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Spacing Utilities */
+.py-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--black);
+}
+.footer-link {
+    transition: color 0.3s ease;
+}
+.footer-link:hover {
+    color: var(--primary);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    transition: all 0.3s ease;
+}
