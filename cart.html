@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - STF Phones & Gadgets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/cart.js" defer></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-gray-500 text-lg">STF Phones</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-primary transition duration-300">Home</a>
+                    <a href="products.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-primary transition duration-300">Products</a>
+                    <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-primary transition duration-300">About</a>
+                    <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-primary transition duration-300">Contact</a>
+                    <a href="cart.html" class="py-4 px-2 relative">
+                        <i class="fas fa-shopping-cart text-primary"></i>
+                        <span class="cart-count absolute top-2 right-0 bg-primary text-white text-xs rounded-full h-5 w-5 flex items-center justify-center hidden">0</span>
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-gray-500 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden md:hidden bg-white shadow-lg">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="index.html" class="block px-3 py-2 text-gray-500 hover:text-primary">Home</a>
+            <a href="products.html" class="block px-3 py-2 text-gray-500 hover:text-primary">Products</a>
+            <a href="#" class="block px-3 py-2 text-gray-500 hover:text-primary">About</a>
+            <a href="#" class="block px-3 py-2 text-gray-500 hover:text-primary">Contact</a>
+            <a href="cart.html" class="block px-3 py-2 text-primary">
+                <i class="fas fa-shopping-cart mr-2"></i>Cart
+                <span class="cart-count ml-1 bg-primary text-white text-xs rounded-full h-5 w-5 inline-flex items-center justify-center hidden">0</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Cart Content -->
+    <div class="max-w-6xl mx-auto px-4 py-12">
+        <h1 class="text-3xl font-bold text-gray-900 mb-8">Your Shopping Cart</h1>
+        
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <!-- Cart Items -->
+            <div class="cart-items divide-y divide-gray-200">
+                <!-- Cart items will be dynamically inserted here -->
+                <div class="empty-cart-message p-8 text-center">
+                    <i class="fas fa-shopping-cart text-4xl text-gray-300 mb-4"></i>
+                    <h3 class="text-lg font-medium text-gray-700">Your cart is empty</h3>
+                    <p class="mt-1 text-gray-500">Start shopping to add items to your cart</p>
+                    <a href="products.html" class="mt-4 inline-block px-4 py-2 bg-primary text-white rounded-md hover:bg-blue-700 transition">
+                        Browse Products
+                    </a>
+                </div>
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="cart-summary bg-gray-50 p-6 border-t border-gray-200">
+                <div class="flex justify-between items-center mb-4">
+                    <span class="text-lg font-medium text-gray-700">Subtotal</span>
+                    <span class="cart-subtotal text-xl font-bold text-primary">$0.00</span>
+                </div>
+                <p class="text-sm text-gray-500 mb-6">Shipping and taxes calculated at checkout</p>
+                <a href="checkout.html" class="block w-full bg-primary text-white text-center py-3 rounded-md hover:bg-blue-700 transition">
+                    Proceed to Checkout
+                </a>
+                <div class="mt-4 text-center">
+                    <a href="products.html" class="text-primary hover:underline">Continue Shopping</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">STF Phones</h3>
+                    <p>Your trusted source for quality phones and gadgets since 2023.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-primary transition">Home</a></li>
+                        <li><a href="products.html" class="hover:text-primary transition">Products</a></li>
+                        <li><a href="#" class="hover:text-primary transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <p><i class="fas fa-phone mr-2"></i> (123) 456-7890</p>
+                    <p class="mt-2"><i class="fas fa-envelope mr-2"></i> info@stfphones.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2023 STF Phones & Gadgets. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
